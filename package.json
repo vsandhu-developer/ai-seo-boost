@@ -19,7 +19,9 @@
     "@langchain/langgraph": "^0.4.9",
     "@langchain/tavily": "^0.1.5",
     "@langchain/textsplitters": "^0.1.0",
+    "@types/cors": "^2.8.19",
     "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
     "puppeteer": "^24.22.3",
     "zod": "^4.1.11"
   }

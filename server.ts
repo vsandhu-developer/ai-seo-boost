@@ -1,3 +1,4 @@
+import cors from "cors";
 import express, {
   urlencoded,
   type Application,
@@ -9,6 +10,12 @@ const app: Application = express();
 
 app.use(express.json());
 app.use(urlencoded({ extended: false }));
+
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
 
 app.get("/", (req: Request, res: Response) => {
   res.json({ message: "Server is running" });

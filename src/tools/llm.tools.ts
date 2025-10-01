@@ -22,7 +22,7 @@ interface GenerateBlogParams {
 export const getSeoData = tool(
   async (params) => {
     const { url } = params as getSeoDataParams;
-    const data = await scrapeWebsite(url, false);
+    const data = await scrapeWebsite(url);
     return JSON.stringify(data);
   },
   {
